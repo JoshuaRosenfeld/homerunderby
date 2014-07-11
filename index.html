@@ -1,15 +1,5 @@
 <!doctype html>
 
-<!-- To-Do:
-
-	1. Explain the process
-
-	Bonus: 
-	1. Show distance on tooltip
-	2. Animate map
-
--->
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -82,54 +72,55 @@
 			</div>
 			<hr class="featurette-divider">
 			<div class="sub-container">
+				<h3 class="title">Target Field Stadium Map</h3>
 				<p class="title section-title">click to add or remove a layer</p>
 				<ul class="circles">
-					<li class="wow rollIn animated" data-wow-delay="4.25s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.8s">
 						<div class="circle" id="bautista" data-name="Jose Bautista">
 							<div class="circle-text">Jose Bautista</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="4s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.6s">
 						<div class="circle" id="tulowitzki" data-name="Troy Tulowitzki">
 							<div class="circle-text">Troy Tulowitzki</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="3.75s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.4s">
 						<div class="circle" id="cespedes" data-name="Yoenis Cespedes">
 							<div class="circle-text">Yoenis Cespedes</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="3.5s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.2s">
 						<div class="circle" id="stanton" data-name="Giancarlo Stanton">
 							<div class="circle-text">Giancarlo Stanton</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="3.25s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1s">
 						<div class="circle" id="jones" data-name="Adam Jones">
 							<div class="circle-text">Adam<br>Jones</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="3s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.8s">
 						<div class="circle" id="puig" data-name="Yasiel Puig">
 							<div class="circle-text">Yasiel<br>Puig</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="2.75s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.6s">
 						<div class="circle" id="dozier" data-name="Brian Dozier">
 							<div class="circle-text">Brian<br>Dozier</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="2.5s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.4s">
 						<div class="circle" id="frazier" data-name="Todd Frazier">
 							<div class="circle-text">Todd<br>Frazier</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="2.25s">
+					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.2s">
 						<div class="circle" id="donaldson" data-name="Josh Donaldson">
 							<div class="circle-text">Josh Donaldson</div>
 						</div>
 					</li>
-					<li class="wow rollIn animated" data-wow-delay="2s">
+					<li class="wow rollIn animated" data-wow-offset="40">
 						<div class="circle" id="morneau" data-name="Justin Morneau">
 							<div class="circle-text">Justin Morneau</div>
 						</div>
@@ -138,6 +129,17 @@
 				<div class="map-container wow fadeInLeft animated" data-wow-duration="3s">
 					<div id="map"></div>
 					<button class="restore btn btn-default">Restore</button>
+					<div class="legend">
+						<p class="title">section colors</p>
+						<div>
+							<div class="patch best"></div>
+							<p>best $ per HR value</p>
+						</div>
+						<div>
+							<div class="patch worst"></div>
+							<p>worst $ per HR value</p>
+						</div>
+					</div>
 				</div>
 				<div class="breakdown-container wow fadeInRight animated" data-wow-duration="3s">
 					<div class="stats">
@@ -151,7 +153,7 @@
 						</div>
 						<div class="stat">
 							<h3 class="num">68</h3>
-							<p>projected catchable HRs at HRD</p>
+							<p>projected catchable HRs at Home Run Derby</p>
 						</div>
 					</div>
 					<div class="breakdown">

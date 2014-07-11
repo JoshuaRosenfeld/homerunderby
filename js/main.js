@@ -28,6 +28,39 @@ $(document).ready(function() {
 		'Giancarlo Stanton': [255, 202, 0, 0.3]
 	}
 
+	var color_gradient = {
+		1: '#099009',
+		2: '#129309',
+		3: '#1D9609',
+		4: '#27990A',
+		5: '#329B0A',
+		6: '#3E9F0B',
+		7: '#49A20B',
+		8: '#55A50B',
+		9: '#62A80C',
+		10: '#6FAB0C',
+		11: '#7CAE0D',
+		12: '#89B10D',
+		13: '#97B40E',
+		14: '#A5B70E',
+		15: '#B4BA0F',
+		16: '#BDB70F',
+		17: '#C0AD10',
+		18: '#C3A410',
+		19: '#C69A11',
+		20: '#C99012',
+		21: '#CC8512',
+		22: '#CF7A13',
+		23: '#D26F13',
+		24: '#D56414',
+		25: '#D85814',
+		26: '#DB4B15',
+		27: '#DE3F16',
+		28: '#E13216',
+		29: '#E42517',
+		30: '#E71818'
+	}
+
 	$('.player-container').slick({
 		dots: true,
 		slidesToShow: 1,
@@ -139,7 +172,7 @@ $(document).ready(function() {
 
 		var opts = {
 		    weight: 0,
-		    fillOpacity: 0.4,
+		    fillOpacity: 0.65,
 		    clickable: false
 		};
 
@@ -153,24 +186,9 @@ $(document).ready(function() {
 					path = pathToPoints(path_string);
 
 					var cost = element['avg_price'] / element['homeruns'];
-
-					var yellow = '#ffff00';
-					var green = '#00ff00';
-					var red = '#ff0000';
-					var color;
-
-					if (element['avg_price'] == -1) {
-						color = 'ccc';
-					} else if (element['homeruns'] == 0) {
-						color = red;
-					} else {
-						if (cost < 100) {
-							color = green;
-						} else if (cost < 200) {
-							color = yellow;
-						} else {
-							color = red;
-						}
+					var color = '#ffffff'
+					if(element['rank']) {
+						color = color_gradient[element['rank']];
 					}
 
 					var polyopts = _.extend({ fillColor: color }, opts);
@@ -194,13 +212,7 @@ $(document).ready(function() {
 			var cost;
 
 			cost = '$' + (avg / element['homeruns']).toFixed(2);
-
-			if (avg == -1) {
-				avg = "--";
-				cost = "--"
-			} else {
-				avg = '$' + avg;
-			}
+			avg = '$' + Math.round(avg);
 
 			if (hr == 0) {
 				cost = "n/a"
