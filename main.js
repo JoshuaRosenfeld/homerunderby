@@ -113,7 +113,7 @@ $(document).ready(function() {
 			var player_icon = L.icon(player_icon_dict);
 
 			_.each(player['homeruns'], function(homerun, homerun_index) {
-				var marker = L.marker([homerun[0], homerun[1]], {icon: player_icon}).bindPopup(homerun[0] + " " + homerun[1]);
+				var marker = L.marker([homerun[0], homerun[1]], {icon: player_icon}).bindPopup(player['name']);
 				markers.push(marker);
 			})
 
