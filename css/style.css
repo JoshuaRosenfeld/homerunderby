@@ -1,5 +1,5 @@
 body {
-	font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue, 'Helvetica Neue', HelveticaNeueRoman, HelveticaNeue-Roman, 'Helvetica Neue Roman', Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #ECECEC;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .breakdown-container {
-	width: 300px;
+	width: 310px;
 	height: 675px;
 	/*position: relative;*/
 	margin: 0 0 0 25px;
@@ -43,7 +43,7 @@ body {
 }
 
 .breakdown-header {
-	width: 300px;
+	width: 310px;
 	background-color: rgb(24, 105, 172);
 	color: white;
 	padding: 10px;
@@ -165,14 +165,14 @@ body {
 }
 
 .legend {
-	width: 145px;
+	width: 152px;
 	height: 75px;
 	background-color: white;
 	display: inline-block;
 	padding: 5px;
 	position: relative;
 	top: -665px;
-	left: 450px;
+	left: 360px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
 }
@@ -265,9 +265,9 @@ body {
 
 .all {
 	position: relative;
-	width: 74px;
+	width: 82px;
 	top: -637px;
-	left: -30px;
+	left: -36px;
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 4px;
