@@ -119,7 +119,6 @@ $(document).ready(function() {
 
 			var layer = L.layerGroup(markers).addTo(map);
 
-
 			overlay[player['name']] = layer;
 		});
 
@@ -158,8 +157,21 @@ $(document).ready(function() {
 					var yellow = '#ffff00';
 					var green = '#00ff00';
 					var red = '#ff0000';
+					var color;
 
-					var color = yellow;
+					if (element['avg_price'] == -1) {
+						color = 'ccc';
+					} else if (element['homeruns'] == 0) {
+						color = red;
+					} else {
+						if (cost < 100) {
+							color = green;
+						} else if (cost < 200) {
+							color = yellow;
+						} else {
+							color = red;
+						}
+					}
 
 					var polyopts = _.extend({ fillColor: color }, opts);
 					L.polygon(path, polyopts).addTo(map);
@@ -173,14 +185,29 @@ $(document).ready(function() {
 
 			var name = element['name'];
 
-			if (element['name'] == "great-clips-great-seats") {
+			if (name == "great-clips-great-seats") {
 				name = "GCGS";
 			}
 
-			var cost = element['avg_price'] / element['homeruns'];
-			$( "<tr><td>" + name + "</td><td>$" + 
-				element['avg_price'] + "</td><td>" + element['homeruns'] +
-				"</td><td>$" + cost + "</td></tr>" ).appendTo( '.table > tbody' );
+			var avg = element['avg_price'];
+			var hr = element['homeruns'];
+			var cost;
+
+			cost = '$' + (avg / element['homeruns']).toFixed(2);
+
+			if (avg == -1) {
+				avg = "--";
+				cost = "--"
+			} else {
+				avg = '$' + avg;
+			}
+
+			if (hr == 0) {
+				cost = "n/a"
+			}
+
+			$( "<tr><td>" + name + "</td><td>" + avg + "</td><td>" + element['homeruns'] +
+				"</td><td>" + cost + "</td></tr>" ).appendTo( '.table > tbody' );
 		});
 	}
 
