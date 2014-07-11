@@ -177,7 +177,9 @@ var players = [
 			[240, 655, "Bautista, 9/14 vs. COL"],
 			[242, 660, "Bautista, 9/14 vs. COL"],
 			[290, 700, "Bautista, 9/14 vs. COL"],
-			[336, 770, "Bautista, 9/14 vs. COL"]
+			[336, 770, "Bautista, 9/14 vs. COL"],
+			[220, 205, "Bautista, 9/14 vs. COL"],
+			[305, 198, "Bautista, 9/14 vs. COL"]
 		]
 	},
 	{

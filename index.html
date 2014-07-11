@@ -2,14 +2,15 @@
 
 <!-- To-Do:
 
-	1. Make new player cards
-	2. Add tooltip
-	3. Add image alt tags
-	4. Fill in section data
-	5. Add overall data
-	6. Check for new home runs
-	7. Explain the process
-	8. 	Animate map
+	1. Add image alt tags
+	2. Fill in section data
+	3. Add overall data
+	4. Check for new home runs
+	5. Explain the process
+
+	Bonus: 
+	1. Show distance on tooltip
+	2. Animate map
 
 -->
 
@@ -23,7 +24,7 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./leaflet.css">
 		<link rel="stylesheet" href="./slick/slick.css">
-		<!-- <link rel="stylesheet" href="./animate.css"> -->
+		<link rel="stylesheet" href="./animate.css">
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
@@ -37,19 +38,23 @@
 					<h3 class="title section-title al">American League</h3>
 					<div class="player">
 						<img src="./images/bautista_card.jpg">
-						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/7114620523">"Jose Bautista"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/7114620523">"Jose Bautista"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/cespedes_card.jpg">
-						<p class="attribution">Derivative of <a href="https://www.flickr.com/photos/keithallison/7673524594/in/photolist-cG5Pwb-bCMjL5-cG2BmS-bRG2E6-bRJrsD-bRFWsV-cFsZuQ-cFYJBo-cFsyVo-bMQMvK-bCMsuC-byW92J-byW8yY-byW8ff-cFYz1q-byW7Wd-bRGad8-faDUga-faU5X3-faU5Uq-faDTD8-faDPse-faU5R5-faDUkz-faU9RE-faDU7B-faU5Qo-faU9YL-faDPUZ-faYMYJ-faDUpa-faDQ1B-faUagb-faU5cs-faU5Bs-faDPp4-faDTLx-faU9Gm-faU5tf-dh6vjw">"Yoenis Cespedes"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+						<p class="attribution">Derivative of <a target="_blank" href="https://www.flickr.com/photos/keithallison/7673524594/in/photolist-cG5Pwb-bCMjL5-cG2BmS-bRG2E6-bRJrsD-bRFWsV-cFsZuQ-cFYJBo-cFsyVo-bMQMvK-bCMsuC-byW92J-byW8yY-byW8ff-cFYz1q-byW7Wd-bRGad8-faDUga-faU5X3-faU5Uq-faDTD8-faDPse-faU5R5-faDUkz-faU9RE-faDU7B-faU5Qo-faU9YL-faDPUZ-faYMYJ-faDUpa-faDQ1B-faUagb-faU5cs-faU5Bs-faDPp4-faDTLx-faU9Gm-faU5tf-dh6vjw">"Yoenis Cespedes"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/jones_card.jpg">
-						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/3637134503">"Adam Jones"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3637134503">"Adam Jones"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/dozier_card.jpg">
-						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/8629971836/in/photolist-e9u2me-e9BAM5-e9C53J-e9ARXS-e9ugZr-e9zW71-e8WESX-e9u77M-atkGY2-atkGUp-atkGVn-atomD5-atomDY">"Brian Dozier"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/8629971836/in/photolist-e9u2me-e9BAM5-e9C53J-e9ARXS-e9ugZr-e9zW71-e8WESX-e9u77M-atkGY2-atkGUp-atkGVn-atomD5-atomDY">"Brian Dozier"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/donaldson_card.jpg">
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/9584201356/in/photolist-fAVx9Y-fArVp6-cdMT1o-4HfnQG-4HCL6E-4Hfm5s-4HBg7W-4HyAm6-4HCJcy-4Hx16z-4HfmUN-4Hyy5P-4HBfws-4Hyt9M-4HfoEY-4HBf33-4Hyzqr-4Hfkfs-4GWwZ2-4H1GiY-4GWHmH-myxYtc-myxXTp-myzKDu-myxYkr-myywgP-myyujn-myzMff-myyvGn-myxZax-myxZNM-myywt2-myxXce-myxXFv">"Josh Donaldson"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 					</div>
 				</div>
 				<div class="vs">
@@ -59,19 +64,23 @@
 					<h3 class="title section-title nl">National League</h3>
 					<div class="player">
 						<img src="./images/tulowitzki_card.jpg">
-						<p class="attribution"><a href="https://www.flickr.com/photos/dirkhansen/3738124462">"Troy Tulowitzki"</a> by SD Dirk is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/dirkhansen/3738124462">"Troy Tulowitzki"</a> by SD Dirk is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/stanton_card.jpg">
-						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/misschatter/4986632298">"2ND"</a> by Cathy T is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+						<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/misschatter/4986632298">"2ND"</a> by Cathy T is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/puig_card.jpg">
-						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/84263554@N00/13872864403">"Yasiel Puig..."</a> by Ron Reiring is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+						<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/84263554@N00/13872864403">"Yasiel Puig..."</a> by Ron Reiring is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
 					</div>
 					<div class="player">
 						<img src="./images/frazier_card.jpg">
-						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/bandwagon_photography/7835116392">"Todd Frazier..."</a> by Heather Jackson is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+						<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/bandwagon_photography/7835116392">"Todd Frazier..."</a> by Heather Jackson is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/morneau_card.jpg">
+						<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3511463149/in/photolist-6miaE6-6mic7v-6mnhAY-4FBac7-6mi8Gg-4FxGVh-4Ftung-4FsCTF-6mieu8-6mibZg-6miexc-4FAQQ5-4Ft6je-e9BTty-e9ve3K-e9ukVe-4FsjgH-6mniM5-e9dRCK-e9dN9M-e8Whmc-e9jAHj-e9u9TF-e93ea1-e9dR5R-e9dWzB-e9dgCZ-5ajGgW-e9jzuG-e9jt77-6xMRGR-e9d2Ba-e9cMRi-e9jMu5-5mx32s-6xMRB4-6xMRDP-5mhT6G-6micxc-5mdQNg-5msCu8-5msD6V-4Fwz8t-5mxkjb-4FwAKn-5mt4XV-5mdGn6-6mnmSU-5mdJwK-5msEP6">"Justin Morneau"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 					</div>
 				</div>
 			</div>
