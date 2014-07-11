@@ -1,0 +1,212 @@
+body {
+	font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue, 'Helvetica Neue', HelveticaNeueRoman, HelveticaNeue-Roman, 'Helvetica Neue Roman', Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	background-color: #ECECEC;
+}
+
+.title.al {
+	color: rgb(191, 23, 65);
+	text-align: right;
+}
+
+.title.nl {
+	color: rgb(23, 65, 117);
+	text-align: left;
+}
+
+.attribution {
+	text-align: center;
+	font-size: 0.75em;
+}
+
+.attribution a:hover {
+	text-decoration: none;
+}
+
+.breakdown {
+	width: 960px;
+	height: 180px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px;
+}
+
+.circles-container {
+	width: 250px;
+	height: 675px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 auto;
+	margin-left: 50px;
+}
+
+.circles {
+	list-style-type: none;
+	padding: 0;
+	height: 75%;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.circles li {
+	width: 102px;
+	height: 102px;
+	display: inline-block;
+	margin-right: 18px;
+	vertical-align: top;
+}
+
+.outer-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #ff0000;
+}
+
+.inner-circle {
+	width: 90px;
+	height: 90px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.circle-text {
+	text-align: center;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+.container {
+	width: auto;
+	min-width: 1080px;
+	margin: 30px 25px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.description {
+	font-size: 0.75em;
+	text-align: center;
+	margin-top: -10px;
+}
+
+#header {
+	min-width: 1080px;
+	width: 100%;
+	height: 58px;
+	background-color: rgb(24, 105, 172);
+	color: white;
+	border-bottom: 3px solid #fff;
+}
+
+#header .title {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.logo {
+	width: 102px;
+	height: 58px;
+	background: url('https://chairnerd.global.ssl.fastly.net/images/map/new/sgs-logo.png') left 15px no-repeat;
+	margin-left: 25px;
+	display: inline-block;
+	position: absolute;
+}
+
+#map {
+	background-color: white;
+	width: 700px;
+	height: 675px;
+}
+
+.map-container {
+	width: 700px;
+	display: inline-block;
+}
+
+.player {
+	width: 436px;
+	height: 302px;
+	margin: 0 auto;
+}
+
+.player-container {
+	width: 436px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.sub-container {
+	width: 1040px;
+	margin: 30px auto;
+}
+
+.restore {
+	position: relative;
+	top: -665px;
+	left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+}
+
+.restore:focus, .restore:active, .restore:active:focus, .restore: {
+ 	outline: none;
+ 	background-color: white;
+}
+
+.section-header {
+	width: 85px;
+}
+
+.section-title {
+	margin: 0 0 10px 0;
+}
+
+.title {
+	text-align: center;
+}
+
+.vs {
+	margin: 0 25px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	top: 5px;
+}
+
+
+/* Slick Styles */
+.slick-dots {
+	bottom: -35px;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: rgb(50, 50, 50);
+}
+
+/* Tablesorter styles */
+
+table.tablesorter thead tr .header {
+	background-image: url(./images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(./images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(./images/desc.gif);
+}

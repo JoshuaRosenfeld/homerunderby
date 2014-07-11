@@ -1,0 +1,198 @@
+<!doctype html>
+
+<!-- To-Do:
+
+	Image alt tags
+	Click here to toggle by player
+	Fill out players.js
+	Fill out sections.js
+	Make two new player cards
+	Animate map
+
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2014 Home Run Derby</title>
+		<link rel="shortcut icon" href="https://seatgeek.com/favicon.ico">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./leaflet.css">
+		<link rel="stylesheet" href="./slick/slick.css">
+		<link rel="stylesheet" href="./animate.css">
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+		<div id="header">
+			<div class="logo"></div>
+			<h3 class="title">Guide to the 2014 Home Run Derby</h3>
+		</div>
+		<div class="container">
+			<div class="sub-container">
+				<div class="player-container wow fadeInLeft animated" data-wow-duration="2s">
+					<h3 class="title section-title al">American League</h3>
+					<div class="player">
+						<img src="./images/bautista_card.jpg">
+						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/7114620523">"Jose Bautista"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/cespedes_card.jpg">
+						<p class="attribution">Derivative of <a href="https://www.flickr.com/photos/keithallison/7673524594/in/photolist-cG5Pwb-bCMjL5-cG2BmS-bRG2E6-bRJrsD-bRFWsV-cFsZuQ-cFYJBo-cFsyVo-bMQMvK-bCMsuC-byW92J-byW8yY-byW8ff-cFYz1q-byW7Wd-bRGad8-faDUga-faU5X3-faU5Uq-faDTD8-faDPse-faU5R5-faDUkz-faU9RE-faDU7B-faU5Qo-faU9YL-faDPUZ-faYMYJ-faDUpa-faDQ1B-faUagb-faU5cs-faU5Bs-faDPp4-faDTLx-faU9Gm-faU5tf-dh6vjw">"Yoenis Cespedes"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/jones_card.jpg">
+						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/3637134503">"Adam Jones"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/dozier_card.jpg">
+						<p class="attribution"><a href="https://www.flickr.com/photos/keithallison/8629971836/in/photolist-e9u2me-e9BAM5-e9C53J-e9ARXS-e9ugZr-e9zW71-e8WESX-e9u77M-atkGY2-atkGUp-atkGVn-atomD5-atomDY">"Brian Dozier"</a> by Keith Allison is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+					</div>
+				</div>
+				<div class="vs">
+					<img src="./images/vs.png">
+				</div>
+				<div class="player-container wow fadeInRight animated" data-wow-duration="2s">
+					<h3 class="title section-title nl">National League</h3>
+					<div class="player">
+						<img src="./images/tulowitzki_card.jpg">
+						<p class="attribution"><a href="https://www.flickr.com/photos/dirkhansen/3738124462">"Troy Tulowitzki"</a> by SD Dirk is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/stanton_card.jpg">
+						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/misschatter/4986632298">"2ND"</a> by Cathy T is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/puig_card.jpg">
+						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/84263554@N00/13872864403">"Yasiel Puig..."</a> by Ron Reiring is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+					</div>
+					<div class="player">
+						<img src="./images/frazier_card.jpg">
+						<p class="attribution">Derivative of<a href="https://www.flickr.com/photos/bandwagon_photography/7835116392">"Todd Frazier..."</a> by Heather Jackson is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+					</div>
+				</div>
+			</div>
+			<hr class="featurette-divider">
+			<div class="sub-container">
+				<div class="map-container">
+					<div id="map"></div>
+					<button class="restore btn btn-default">Restore</button>
+				</div>
+				<div class="circles-container">
+					<ul class="circles">
+						<li>
+							<div class="outer-circle" data-name="Jose Bautista">
+								<div class="inner-circle">
+									<div class="circle-text">Jose Bautista</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Troy Tulowitzki">
+								<div class="inner-circle">
+									<div class="circle-text">Troy Tulowitzki</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Yoenis Cespedes">
+								<div class="inner-circle">
+									<div class="circle-text">Yoenis Cespedes</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Giancarlo Stanton">
+								<div class="inner-circle">
+									<div class="circle-text">Giancarlo Stanton</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Adam Jones">
+								<div class="inner-circle">
+									<div class="circle-text">Adam<br>Jones</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Yasiel Puig">
+								<div class="inner-circle">
+									<div class="circle-text">Yasiel<br>Puig</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Brian Dozier">
+								<div class="inner-circle">
+									<div class="circle-text">Brian<br>Dozier</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Todd Frazier">
+								<div class="inner-circle">
+									<div class="circle-text">Tood<br>Frazier</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Josh Donaldson">
+								<div class="inner-circle">
+									<div class="circle-text">Josh Donaldson</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="outer-circle" data-name="Justin Morneau">
+								<div class="inner-circle">
+									<div class="circle-text">Justin Morneau</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr class="featurette-divider">
+			<div class="sub-container">
+				<h4 class="title section-title">Breakdown by section</h4>
+				<p class="description">(scroll for more data)</p>
+				<div class="breakdown">
+					<table class="table">
+						<thead>
+							<tr class="header-row">
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="price-row">
+								<th>Price</th>
+							</tr>
+							<tr class="hr-row">
+								<th>HRs</th>
+							</tr>
+							<tr class="cost-row">
+								<th>HR cost</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js'></script>
+		<script src="./leaflet.js"></script>
+		<script src="./tablesorter.js"></script>
+		<script src="./underscore-min.js"></script>
+		<script src="./slick/slick.min.js"></script>
+		<script src="./sections.js"></script>
+		<script src="./players.js"></script>
+		<script src="./paths.js"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
