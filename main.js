@@ -169,10 +169,9 @@ $(document).ready(function() {
 			}
 
 			var cost = element['avg_price'] / element['homeruns'];
-			$('.header-row').append('<th>' + name + '</th>');
-			$('.price-row').append('<td>$' + element['avg_price'] + '</td>');
-			$('.hr-row').append('<td>' + element['homeruns'] + '</td>');
-			$('.cost-row').append('<td>$' + cost + '</td>');
+			$( "<tr><td>" + name + "</td><td>$" + 
+				element['avg_price'] + "</td><td>" + element['homeruns'] +
+				"</td><td>$" + cost + "</td></tr>" ).appendTo( '.table > tbody' );
 		});
 	}
 
