@@ -15,6 +15,19 @@ $(document).ready(function() {
 		'Giancarlo Stanton': true
 	}
 
+	var colors = {
+		'Jose Bautista': [149, 216, 255, 0.3],
+		'Yoenis Cespedes': [0, 75, 58, 0.3],
+		'Adam Jones': [246, 127, 43, 0.3],
+		'Brian Dozier': [212, 31, 70, 0.3],
+		'Josh Donaldson': [143, 202, 0, 0.3],
+		'Troy Tulowitzki': [77, 56, 123, 0.3],
+		'Todd Frazier': [255, 0, 0, 0.3],
+		'Yasiel Puig': [0, 85, 151, 0.3],
+		'Justin Morneau': [120, 120, 120, 0.3],
+		'Giancarlo Stanton': [255, 202, 0, 0.3]
+	}
+
 	$('.player-container').slick({
 		dots: true,
 		slidesToShow: 1,
@@ -58,16 +71,26 @@ $(document).ready(function() {
 			map.setView([500, 500], 1);
 			_.each(visible, function(value, key) {
 				visible[key] = true;
-				map.addLayer(overlay[name]);
+				map.addLayer(overlay[key]);
+				var circles =  $('div.circle');
+				for (var i = 0; i < 9; i++) {
+					var c = circles[i];
+					var name = $(c).data('name');
+					var color = colors[name];
+					$(c).css('background-color', 'rgba('+color+')');
+				}
 			});
 		});
 
-		$('.outer-circle').click(function() {
+		$('.circle').click(function() {
 			var name = $(this).data('name');
 			if (visible[name]) {
 				map.removeLayer(overlay[name]);
+				$(this).css('background-color', 'rgb(255, 255, 255)');
 			} else {
 				map.addLayer(overlay[name]);
+				color = colors[name];
+				$(this).css('background-color', 'rgba('+color+')');
 			}
 			visible[name] = !visible[name];
 		});
@@ -99,24 +122,6 @@ $(document).ready(function() {
 
 			overlay[player['name']] = layer;
 		});
-
-		// for (var i = 0; i += 100; i <= 1000) {
-		// 	var points = [[i, 0], [i, 1000]];
-		// 	var line = new L.Polyline(points, {
-		// 		color: 'red',
-		// 		weight: 3,
-		// 		opacity: 0.5,
-		// 		smoothFactor: 1
-		// 	}).addTo(map);
-
-		// 	var points2 = [[0, i], [1000, i]];
-		// 	var line = new L.Polyline(points, {
-		// 		color: 'blue',
-		// 		weight: 3,
-		// 		opacity: 0.5,
-		// 		smoothFactor: 1
-		// 	}).addTo(map);
-		// }
 
 		return map;
 	}
