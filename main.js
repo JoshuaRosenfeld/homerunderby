@@ -56,6 +56,10 @@ $(document).ready(function() {
 
 		$('.restore').click(function() {
 			map.setView([500, 500], 1);
+			_.each(visible, function(value, key) {
+				visible[key] = true;
+				map.addLayer(overlay[name]);
+			});
 		});
 
 		$('.outer-circle').click(function() {
