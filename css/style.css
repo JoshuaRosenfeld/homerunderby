@@ -43,7 +43,7 @@ body {
 }
 
 .breakdown-header {
-	width: 100%;
+	width: 300px;
 	background-color: rgb(24, 105, 172);
 	color: white;
 	padding: 10px;
