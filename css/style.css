@@ -74,52 +74,42 @@ body {
 
 #bautista {
 	border-color: rgb(149, 216, 255);
-	background-color: rgba(149, 216, 255, 0.3);
 }
 
 #stanton {
 	border-color: rgb(255, 202, 0);
-	background-color: rgba(255, 202, 0, 0.3);
 }
 
 #tulowitzki {
 	border-color: rgb(77, 56, 123);
-	background-color: rgba(77, 56, 123, 0.3);
 }
 
 #puig {
 	border-color: rgb(0, 85, 151);
-	background-color: rgba(0, 85, 151, 0.3);
 }
 
 #morneau {
 	border-color: rgb(120, 120, 120);
-	background-color: rgba(120, 120, 120, 0.3);
 }
 
 #jones {
 	border-color: rgb(246, 127, 43);
-	background-color: rgba(246, 127, 43, 0.3);
 }
 
 #frazier {
 	border-color: rgb(255, 0, 0);
-	background-color: rgba(255, 0, 0, 0.3);
 }
 
 #dozier {
 	border-color: rgb(212, 31, 70);
-	background-color: rgba(212, 31, 70, 0.3);
 }
 
 #donaldson {
 	border-color: rgb(143, 202, 0);
-	background-color: rgba(143, 202, 0, 0.3);
 }
 
 #cespedes {
 	border-color: rgb(0, 75, 58);
-	background-color: rgba(0, 75, 58, 0.3);
 }
 
 .circle {
@@ -273,6 +263,19 @@ body {
 	margin: 30px auto;
 }
 
+.all {
+	position: relative;
+	width: 74px;
+	top: -637px;
+	left: -30px;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	height: 25px;
+	line-height: 11px;
+}
+
 .restore {
 	position: relative;
 	top: -665px;
@@ -281,6 +284,8 @@ body {
 	vertical-align: top;
 	border-radius: 4px;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	height: 25px;
+	line-height: 11px;
 }
 
 .restore:focus, .restore:active, .restore:active:focus, .restore: {
