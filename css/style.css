@@ -119,13 +119,13 @@ body {
 	height: 18px;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 2px;
 	margin-right: 3px;
 	background-repeat: no-repeat;
 }
 
 #icon-ball {
 	width: 18px;
+	margin-top: 1px;
 }
 
 #icon-ball:hover {
@@ -135,6 +135,7 @@ body {
 
 #icon-cap {
 	width: 25px;
+	margin-top: 2px;
 }
 
 #icon-cap:hover {
