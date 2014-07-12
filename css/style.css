@@ -3,16 +3,6 @@ body {
 	background-color: #ECECEC;
 }
 
-.title.al {
-	color: rgb(191, 23, 65);
-	text-align: right;
-}
-
-.title.nl {
-	color: rgb(23, 65, 117);
-	text-align: left;
-}
-
 .attribution {
 	text-align: center;
 	font-size: 0.75em;
@@ -73,46 +63,6 @@ body {
 	margin-bottom: -20px;
 }
 
-#bautista {
-	border-color: rgb(149, 216, 255);
-}
-
-#stanton {
-	border-color: rgb(255, 202, 0);
-}
-
-#tulowitzki {
-	border-color: rgb(77, 56, 123);
-}
-
-#puig {
-	border-color: rgb(0, 85, 151);
-}
-
-#morneau {
-	border-color: rgb(120, 120, 120);
-}
-
-#jones {
-	border-color: rgb(246, 127, 43);
-}
-
-#frazier {
-	border-color: rgb(255, 0, 0);
-}
-
-#dozier {
-	border-color: rgb(212, 31, 70);
-}
-
-#donaldson {
-	border-color: rgb(143, 202, 0);
-}
-
-#cespedes {
-	border-color: rgb(0, 75, 58);
-}
-
 .circle {
 	width: 80px;
 	height: 80px;
@@ -123,7 +73,7 @@ body {
 
 .circle:hover {
 	cursor: pointer;
-	box-shadow: 0 0 30px #ccc;
+	box-shadow: 0 0 30px #cccccc;
 }
 
 .circle-text {
@@ -147,7 +97,7 @@ body {
 	margin-top: -10px;
 }
 
-#header {
+.header-container {
 	min-width: 1080px;
 	width: 100%;
 	height: 58px;
@@ -156,13 +106,17 @@ body {
 	border-bottom: 3px solid #fff;
 }
 
-#header .title {
+.header-container .title {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 auto;
 	position: relative;
 	width: 100%;
 	margin-top: 15px;
+}
+
+.last {
+	margin-right: 0;
 }
 
 .legend {
@@ -218,6 +172,20 @@ body {
 	margin-bottom: 40px;
 }
 
+.nav-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.nav-list a, .top a {
+	color: rgb(24, 105, 172);
+}
+
+.nav-list li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
 .num {
 	font-size: 2.2em;
 	font-weight: bold;
@@ -233,12 +201,9 @@ body {
 	display: inline-block;
 }
 
-.best {
-	background-color: rgba(9, 144, 9, 0.65);
-}
-
-.worst {
-	background-color: rgba(231, 24, 24, 0.65);
+.primary-nav {
+	width: 250px;
+	margin: 20px auto;
 }
 
 .player {
@@ -278,38 +243,6 @@ body {
 	margin: 5px auto;
 }
 
-.all {
-	position: relative;
-	width: 82px;
-	top: -637px;
-	left: -36px;
-	display: inline-block;
-	vertical-align: top;
-	border-radius: 4px;
-	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
-	height: 25px;
-	line-height: 11px;
-	margin-bottom: -25px;
-}
-
-.restore {
-	position: relative;
-	top: -665px;
-	left: 50px;
-	display: inline-block;
-	vertical-align: top;
-	border-radius: 4px;
-	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
-	height: 25px;
-	line-height: 11px;
-	margin-bottom: -25px;
-}
-
-.restore:focus, .restore:active, .restore:active:focus, .restore: {
- 	outline: none;
- 	background-color: white;
-}
-
 .section-header {
 	width: 85px;
 }
@@ -322,12 +255,104 @@ body {
 	text-align: center;
 }
 
+.title.al {
+	color: rgb(191, 23, 65);
+	text-align: right;
+}
+
+.title.nl {
+	color: rgb(23, 65, 117);
+	text-align: left;
+}
+
+.top {
+	text-align: right;
+}
+
 .vs {
 	margin: 0 25px;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 	top: 5px;
+}
+
+/* Leaflet custom layers */
+
+.best {
+	background-color: rgba(9, 144, 9, 0.65);
+}
+
+.worst {
+	background-color: rgba(231, 24, 24, 0.65);
+}
+
+.btn-map {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 4px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	height: 25px;
+	line-height: 11px;
+	margin-bottom: -25px;
+}
+
+.all {
+	width: 101px;
+	top: -637px;
+	left: -55px;
+}
+
+.restore {
+	top: -665px;
+	left: 50px;
+}
+
+.btn-map:focus, .btn-map:active, .btn-map:active:focus {
+ 	outline: none;
+ 	background-color: white;
+}
+
+/* Player colors */
+#bautista {
+	border-color: rgb(149, 216, 255);
+}
+
+#stanton {
+	border-color: rgb(255, 202, 0);
+}
+
+#tulowitzki {
+	border-color: rgb(77, 56, 123);
+}
+
+#puig {
+	border-color: rgb(0, 85, 151);
+}
+
+#morneau {
+	border-color: rgb(120, 120, 120);
+}
+
+#jones {
+	border-color: rgb(246, 127, 43);
+}
+
+#frazier {
+	border-color: rgb(255, 0, 0);
+}
+
+#dozier {
+	border-color: rgb(212, 31, 70);
+}
+
+#donaldson {
+	border-color: rgb(143, 202, 0);
+}
+
+#cespedes {
+	border-color: rgb(0, 75, 58);
 }
 
 

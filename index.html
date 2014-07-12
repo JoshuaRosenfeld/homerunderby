@@ -15,11 +15,17 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="header">
+		<div class="header-container" id="top">
 			<a href="https://seatgeek.com/" class="logo"></a>
 			<h3 class="title">Guide to the 2014 Home Run Derby</h3>
 		</div>
-		<div class="container">
+		<div class="primary-nav">
+			<ul class="nav-list">
+				<a href="#homerun-map"><li>The Homeruns</li></a>
+				<a href="#player-bios"><li class="last">The Players</li></a>
+			</ul>
+		</div>
+		<div class="container" id="homerun-map">
 			<div class="sub-container">
 				<h3 class="title">Target Field Stadium Map</h3>
 				<p class="title section-title">click a circle to add or remove a player or click toggle to add or remove them all</p>
@@ -77,8 +83,8 @@
 				</ul>
 				<div class="map-container wow fadeInLeft animated" data-wow-duration="3s">
 					<div id="map"></div>
-					<button class="restore btn btn-default">Restore</button>
-					<button class="all btn btn-default">Toggle</button>
+					<button class="restore btn btn-map btn-default">reset view</button>
+					<button class="all btn btn-map btn-default">toggle HRs</button>
 					<div class="legend">
 						<p class="title">section color legend</p>
 						<div>
@@ -130,8 +136,11 @@
 						</div>
 					</div>
 				</div>
+				<div class="top">
+					<a href="#top">Back to top</a>
+				</div>
 			</div>
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="player-bios">
 			<div class="sub-container">
 				<h3 class="title">Player Bios</h3>
 				<div class="players-container">
@@ -184,6 +193,9 @@
 							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3511463149/in/photolist-6miaE6-6mic7v-6mnhAY-4FBac7-6mi8Gg-4FxGVh-4Ftung-4FsCTF-6mieu8-6mibZg-6miexc-4FAQQ5-4Ft6je-e9BTty-e9ve3K-e9ukVe-4FsjgH-6mniM5-e9dRCK-e9dN9M-e8Whmc-e9jAHj-e9u9TF-e93ea1-e9dR5R-e9dWzB-e9dgCZ-5ajGgW-e9jzuG-e9jt77-6xMRGR-e9d2Ba-e9cMRi-e9jMu5-5mx32s-6xMRB4-6xMRDP-5mhT6G-6micxc-5mdQNg-5msCu8-5msD6V-4Fwz8t-5mxkjb-4FwAKn-5mt4XV-5mdGn6-6mnmSU-5mdJwK-5msEP6">"Justin Morneau"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
 						</div>
 					</div>
+				</div>
+				<div class="top">
+					<a href="#top">Back to top</a>
 				</div>
 			</div>
 			<hr class="featurette-divider">

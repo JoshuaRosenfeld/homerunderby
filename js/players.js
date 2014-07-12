@@ -193,7 +193,6 @@ var players = [
 			[291, 209, "Bautista, 9/14 vs. COL"],
 			[253, 233, "Bautista, 9/14 vs. COL"],
 			[199, 288, "Bautista, 9/14 vs. COL"],
-			[199, 338, "Bautista, 9/14 vs. COL"],
 			[180, 390, "Bautista, 9/14 vs. COL"],
 			[192, 415, "Bautista, 9/14 vs. COL"],
 			[145, 385, "Bautista, 9/14 vs. COL"],

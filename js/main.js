@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	var all = false;
 
 	var map;
 	var overlay = {};
@@ -106,6 +105,13 @@ $(document).ready(function() {
 		});
 
 		$('.all').click(function() {
+			var all = true;
+			_.each(visible, function(value, key) {
+				if (visible[key] == false) {
+					all = false;
+				}
+			});
+
 			if (!all) {
 				_.each(visible, function(value, key) {
 					visible[key] = true;
@@ -132,8 +138,6 @@ $(document).ready(function() {
 					$(c).css('background-color', 'white');
 				}
 			}
-
-			all = !all;
 		});
 
 		$('.circle').click(function() {
