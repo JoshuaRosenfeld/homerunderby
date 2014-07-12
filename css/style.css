@@ -66,6 +66,13 @@ body {
 	vertical-align: top;
 }
 
+.credit {
+	height: 20px;
+	position: relative;
+	top: -50px;
+	margin-bottom: -20px;
+}
+
 #bautista {
 	border-color: rgb(149, 216, 255);
 }
@@ -128,7 +135,7 @@ body {
 .container {
 	width: auto;
 	min-width: 1080px;
-	margin: 30px 25px;
+	margin: 20px 25px;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -170,6 +177,7 @@ body {
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 4px;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	margin-bottom: -75px;
 }
 
 .legend p {
@@ -203,6 +211,12 @@ body {
 	display: inline-block;
 }
 
+.methodology {
+	width: 700px;
+	margin: 20px auto;
+	margin-bottom: 40px;
+}
+
 .num {
 	font-size: 2.2em;
 	font-weight: bold;
@@ -227,16 +241,21 @@ body {
 }
 
 .player {
-	width: 436px;
+	width: 445px;
 	height: 302px;
 	margin: 0 auto;
 }
 
 .player-container {
-	width: 436px;
+	width: 445px;
 	margin: 0 auto;
 	display: inline-block;
 	margin-bottom: 30px;
+}
+
+.players-container {
+	width: 995px;
+	margin: 30px auto;
 }
 
 .stats {
@@ -255,7 +274,7 @@ body {
 
 .sub-container {
 	width: 1040px;
-	margin: 30px auto;
+	margin: 5px auto;
 }
 
 .all {
@@ -269,6 +288,7 @@ body {
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
 	height: 25px;
 	line-height: 11px;
+	margin-bottom: -25px;
 }
 
 .restore {
@@ -281,6 +301,7 @@ body {
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
 	height: 25px;
 	line-height: 11px;
+	margin-bottom: -25px;
 }
 
 .restore:focus, .restore:active, .restore:active:focus, .restore: {
