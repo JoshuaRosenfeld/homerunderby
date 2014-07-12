@@ -198,6 +198,7 @@ body {
 	margin-left: 25px;
 	display: inline-block;
 	position: absolute;
+	z-index: 5;
 }
 
 #map {
