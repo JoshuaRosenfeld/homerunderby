@@ -22,14 +22,24 @@
 		</div>
 		<div class="primary-nav">
 			<ul class="nav-list">
-				<a href="#homerun-map">
-					<img class="icon" id="icon-ball" src="./images/ball.png">
-					<li>The Homeruns</li>
-				</a>
-				<a href="#player-bios">
-					<img class="icon" id="icon-cap" src="./images/cap.png">
-					<li class="last">The Players</li>
-				</a>
+				<li class="nav-list-item">
+					<a href="#homerun-map">
+						<img class="icon" id="icon-ball" src="./images/ball.png">
+						<span>The Homeruns</span>
+					</a>
+				</li>
+				<li class="nav-list-item">
+					<a href="#player-bios">
+						<img class="icon" id="icon-cap" src="./images/cap.png">
+						<span>The Players</span>
+					</a>
+				</li>
+				<li class="nav-list-item">
+					<a href="#about">
+						<img class="icon" id="icon-about" src="./images/about.png">
+						<span class="last">About</span>
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="container" id="homerun-map">
@@ -205,10 +215,16 @@
 					<a href="#top">Back to top</a>
 				</div>
 			</div>
-			<hr class="featurette-divider">
+			<hr class="featurette-divider" id="about">
 			<div class="sub-container">
 				<h3 class="title">About</h3>
-				<p class="methodology">Methodology goes here</p>
+				<div class="methodology">
+					<p>At SeatGeek, we want you to get the most bang for your dollar. And so, we set out to answer "in which section would fans have <span class="emphasize">the most</span> opportunities to catch a home run while paying <span class="emphasize">the least</span> for their seats?"</p>
+					<p>Using ESPN's Home Run Tracker, we plotted all of the home runs the participants have hit in 2014. We then determined where the home runs would have landed if they were hit at Target Field. Finally, we calculated the average number of home runs hit at the Home Run Derby over the past few years and scaled the distribution to equal this total.</p>
+				</div>
+				<div class="top">
+					<a href="#top">Back to top</a>
+				</div>
 			</div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

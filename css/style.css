@@ -97,6 +97,10 @@ body {
 	margin-top: -10px;
 }
 
+.emphasize {
+	color: rgb(24, 105, 172);
+}
+
 .header-container {
 	min-width: 1080px;
 	width: 100%;
@@ -120,6 +124,16 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 3px;
+	background-repeat: no-repeat;
+}
+
+#icon-about {
+	width: 4px;
+	margin-top: 1px;
+}
+
+#icon-about:hover {
+	background: url('../images/about2.png');
 	background-repeat: no-repeat;
 }
 
@@ -210,7 +224,7 @@ body {
 	text-decoration: none;
 }
 
-.nav-list li {
+.nav-list-item {
 	display: inline-block;
 	margin-right: 30px;
 }
@@ -231,7 +245,7 @@ body {
 }
 
 .primary-nav {
-	width: 318px;
+	width: 415px;
 	margin: 20px auto;
 }
 
@@ -296,6 +310,7 @@ body {
 
 .top {
 	text-align: right;
+	margin-bottom: 20px;
 }
 
 .vs {
