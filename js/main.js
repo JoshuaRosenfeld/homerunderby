@@ -161,14 +161,14 @@ $(document).ready(function() {
 				if (visible[name]) {
 					map.removeLayer(overlay[name]);
 					$(this).css('background-color', 'rgb(255, 255, 255)');
-					$(this).on('mouseleave');
-					$(this).on('mouseover');
+					// $(this).on('mouseleave');
+					// $(this).on('mouseover');
 				} else {
 					map.addLayer(overlay[name]);
 					color = colors[name];
 					$(this).css('background-color', 'rgba('+color+')');
-					$(this).off('mouseleave');
-					$(this).off('mouseover');
+					// $(this).off('mouseleave');
+					// $(this).off('mouseover');
 				}
 				visible[name] = !visible[name];
 			}
