@@ -23,9 +23,6 @@
 			<a href="https://seatgeek.com/" class="logo"></a>
 			<h3 class="title">Guide to the 2014 Home Run Derby</h3>
 		</div>
-		<div class="tweet-button">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://seatgeek.com/hrderby" data-text="Check out SeatGeek's interactive infographic for the home run derby">Tweet</a>
-		</div>
 		<div class="container-primary-nav">
 			<div class="primary-nav">
 				<ul class="nav-list">
@@ -51,187 +48,192 @@
 			</div>
 		</div>
 		<div class="container-content" id="homerun-map">
-			<div class="sub-container">
-				<h3 class="title">Target Field Stadium Map</h3>
-				<p class="title section-title">click a circle to add or remove a player or click toggle to add or remove them all</p>
-				<ul class="circles">
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.8s">
-						<div class="circle" id="bautista" data-name="Jose Bautista">
-							<div class="circle-text">Jose Bautista</div>
+			<div class="content">
+				<div class="tweet-button">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://seatgeek.com/hrderby" data-text="Check out SeatGeek's interactive infographic for the home run derby">Tweet</a>
+				</div>
+				<div class="sub-container">
+					<h3 class="title">Target Field Stadium Map</h3>
+					<p class="title section-title">click a circle to add or remove a player or click toggle to add or remove them all</p>
+					<ul class="circles">
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.8s">
+							<div class="circle" id="bautista" data-name="Jose Bautista">
+								<div class="circle-text">Jose Bautista</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.6s">
+							<div class="circle" id="tulowitzki" data-name="Troy Tulowitzki">
+								<div class="circle-text">Troy Tulowitzki</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.4s">
+							<div class="circle" id="cespedes" data-name="Yoenis Cespedes">
+								<div class="circle-text">Yoenis Cespedes</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.2s">
+							<div class="circle" id="stanton" data-name="Giancarlo Stanton">
+								<div class="circle-text">Giancarlo Stanton</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1s">
+							<div class="circle" id="jones" data-name="Adam Jones">
+								<div class="circle-text">Adam<br>Jones</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.8s">
+							<div class="circle" id="puig" data-name="Yasiel Puig">
+								<div class="circle-text">Yasiel<br>Puig</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.6s">
+							<div class="circle" id="dozier" data-name="Brian Dozier">
+								<div class="circle-text">Brian<br>Dozier</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.4s">
+							<div class="circle" id="frazier" data-name="Todd Frazier">
+								<div class="circle-text">Todd<br>Frazier</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.2s">
+							<div class="circle" id="donaldson" data-name="Josh Donaldson">
+								<div class="circle-text">Josh Donaldson</div>
+							</div>
+						</li>
+						<li class="wow rollIn animated" data-wow-offset="40">
+							<div class="circle" id="morneau" data-name="Justin Morneau">
+								<div class="circle-text">Justin Morneau</div>
+							</div>
+						</li>
+					</ul>
+					<div class="map-container wow fadeInLeft animated" data-wow-duration="3s">
+						<div id="map"></div>
+						<button class="restore btn btn-map btn-default">reset view</button>
+						<button class="all btn btn-map btn-default">toggle HRs</button>
+						<div class="legend">
+							<p class="title">section color legend</p>
+							<div>
+								<div class="patch best"></div>
+								<p>best $ per HR value</p>
+							</div>
+							<div>
+								<div class="patch worst"></div>
+								<p>worst $ per HR value</p>
+							</div>
 						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.6s">
-						<div class="circle" id="tulowitzki" data-name="Troy Tulowitzki">
-							<div class="circle-text">Troy Tulowitzki</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.4s">
-						<div class="circle" id="cespedes" data-name="Yoenis Cespedes">
-							<div class="circle-text">Yoenis Cespedes</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1.2s">
-						<div class="circle" id="stanton" data-name="Giancarlo Stanton">
-							<div class="circle-text">Giancarlo Stanton</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="1s">
-						<div class="circle" id="jones" data-name="Adam Jones">
-							<div class="circle-text">Adam<br>Jones</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.8s">
-						<div class="circle" id="puig" data-name="Yasiel Puig">
-							<div class="circle-text">Yasiel<br>Puig</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.6s">
-						<div class="circle" id="dozier" data-name="Brian Dozier">
-							<div class="circle-text">Brian<br>Dozier</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.4s">
-						<div class="circle" id="frazier" data-name="Todd Frazier">
-							<div class="circle-text">Todd<br>Frazier</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40" data-wow-delay="0.2s">
-						<div class="circle" id="donaldson" data-name="Josh Donaldson">
-							<div class="circle-text">Josh Donaldson</div>
-						</div>
-					</li>
-					<li class="wow rollIn animated" data-wow-offset="40">
-						<div class="circle" id="morneau" data-name="Justin Morneau">
-							<div class="circle-text">Justin Morneau</div>
-						</div>
-					</li>
-				</ul>
-				<div class="map-container wow fadeInLeft animated" data-wow-duration="3s">
-					<div id="map"></div>
-					<button class="restore btn btn-map btn-default">reset view</button>
-					<button class="all btn btn-map btn-default">toggle HRs</button>
-					<div class="legend">
-						<p class="title">section color legend</p>
-						<div>
-							<div class="patch best"></div>
-							<p>best $ per HR value</p>
-						</div>
-						<div>
-							<div class="patch worst"></div>
-							<p>worst $ per HR value</p>
+						<div class="credit">
+							<p>Home Run data pulled from ESPN's Home Run Tracker</a></p>
 						</div>
 					</div>
-					<div class="credit">
-						<p>Home Run data pulled from ESPN's Home Run Tracker</a></p>
+					<div class="breakdown-container wow fadeInRight animated" data-wow-duration="3s">
+						<div class="stats">
+							<div class="stat">
+								<h3 class="num">171</h3>
+								<p>HRs hit by participants in 2014</p>
+							</div>
+							<div class="stat">
+								<h3 class="num">133</h3>
+								<p>catchable HRs at Target Field</p>
+							</div>
+							<div class="stat">
+								<h3 class="num">90</h3>
+								<p>projected catchable HRs at derby</p>
+							</div>
+						</div>
+						<div class="breakdown">
+							<div class="breakdown-header">
+								<h4 class="title section-title">Breakdown by section</h4>
+								<p class="description">(scroll for more data)</p>
+							</div>
+							<div class="breakdown-body">
+								<table class="table table-striped tablesorter">
+									<thead>
+										<tr>
+											<th class="section-header">Section</th>
+											<th>Price</th>
+											<th>HRs</th>
+											<th>HR cost</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="top">
+						<a href="#top">Back to top</a>
 					</div>
 				</div>
-				<div class="breakdown-container wow fadeInRight animated" data-wow-duration="3s">
-					<div class="stats">
-						<div class="stat">
-							<h3 class="num">171</h3>
-							<p>HRs hit by participants in 2014</p>
+				<hr class="featurette-divider" id="player-bios">
+				<div class="sub-container">
+					<h3 class="title">Player Bios</h3>
+					<div class="players-container">
+						<div class="player-container wow bounceInLeft animated" data-wow-duration="2s">
+							<h3 class="title section-title al">American League</h3>
+							<div class="player">
+								<img src="./images/bautista_card.jpg" alt="Jose Bautista, Toronto Blue Jays. Captain of the American League squad, Bautista has averaged 38 HRs per season between 2010 and 2014.">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/7114620523">"Jose Bautista"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/cespedes_card.jpg" alt="Yoenis Cespedes, Oakland Athletics. Reigning Home Run Derby champion, Cespedes hit 32 total HRs in the 2013 Home Run Derby, beating Bryce Harper 9-8 in the final round.">
+								<p class="attribution">Derivative of <a target="_blank" href="https://www.flickr.com/photos/keithallison/7673524594/in/photolist-cG5Pwb-bCMjL5-cG2BmS-bRG2E6-bRJrsD-bRFWsV-cFsZuQ-cFYJBo-cFsyVo-bMQMvK-bCMsuC-byW92J-byW8yY-byW8ff-cFYz1q-byW7Wd-bRGad8-faDUga-faU5X3-faU5Uq-faDTD8-faDPse-faU5R5-faDUkz-faU9RE-faDU7B-faU5Qo-faU9YL-faDPUZ-faYMYJ-faDUpa-faDQ1B-faUagb-faU5cs-faU5Bs-faDPp4-faDTLx-faU9Gm-faU5tf-dh6vjw">"Yoenis Cespedes"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/jones_card.jpg" alt="Adam Jones, Baltimore Orioles. Last year, Jones brought a WWE belt to Media Day. This year, he hopes his hard swing can add more hardware to the collection.">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3637134503">"Adam Jones"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/dozier_card.jpg" alt="Brian Dozier, Minnesota Twins. Representing the host team, Dozier is on pace for a career-best season HR total and is in the midst of a convincing 30-30 campaign. ">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/8629971836/in/photolist-e9u2me-e9BAM5-e9C53J-e9ARXS-e9ugZr-e9zW71-e8WESX-e9u77M-atkGY2-atkGUp-atkGVn-atomD5-atomDY">"Brian Dozier"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/donaldson_card.jpg" alt="Josh Donaldson, Oakland Athletics. Joing A’s teammate Cespedes in the derby, Donaldson makes his first All-Star appearane. He also will start at 3B for the AL.">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/9584201356/in/photolist-fAVx9Y-fArVp6-cdMT1o-4HfnQG-4HCL6E-4Hfm5s-4HBg7W-4HyAm6-4HCJcy-4Hx16z-4HfmUN-4Hyy5P-4HBfws-4Hyt9M-4HfoEY-4HBf33-4Hyzqr-4Hfkfs-4GWwZ2-4H1GiY-4GWHmH-myxYtc-myxXTp-myzKDu-myxYkr-myywgP-myyujn-myzMff-myyvGn-myxZax-myxZNM-myywt2-myxXce-myxXFv">"Josh Donaldson"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
 						</div>
-						<div class="stat">
-							<h3 class="num">133</h3>
-							<p>catchable HRs at Target Field</p>
+						<div class="vs">
+							<img src="./images/vs.png">
 						</div>
-						<div class="stat">
-							<h3 class="num">90</h3>
-							<p>projected catchable HRs at derby</p>
-						</div>
-					</div>
-					<div class="breakdown">
-						<div class="breakdown-header">
-							<h4 class="title section-title">Breakdown by section</h4>
-							<p class="description">(scroll for more data)</p>
-						</div>
-						<div class="breakdown-body">
-							<table class="table table-striped tablesorter">
-								<thead>
-									<tr>
-										<th class="section-header">Section</th>
-										<th>Price</th>
-										<th>HRs</th>
-										<th>HR cost</th>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="top">
-					<a href="#top">Back to top</a>
-				</div>
-			</div>
-			<hr class="featurette-divider" id="player-bios">
-			<div class="sub-container">
-				<h3 class="title">Player Bios</h3>
-				<div class="players-container">
-					<div class="player-container wow bounceInLeft animated" data-wow-duration="2s">
-						<h3 class="title section-title al">American League</h3>
-						<div class="player">
-							<img src="./images/bautista_card.jpg" alt="Jose Bautista, Toronto Blue Jays. Captain of the American League squad, Bautista has averaged 38 HRs per season between 2010 and 2014.">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/7114620523">"Jose Bautista"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/cespedes_card.jpg" alt="Yoenis Cespedes, Oakland Athletics. Reigning Home Run Derby champion, Cespedes hit 32 total HRs in the 2013 Home Run Derby, beating Bryce Harper 9-8 in the final round.">
-							<p class="attribution">Derivative of <a target="_blank" href="https://www.flickr.com/photos/keithallison/7673524594/in/photolist-cG5Pwb-bCMjL5-cG2BmS-bRG2E6-bRJrsD-bRFWsV-cFsZuQ-cFYJBo-cFsyVo-bMQMvK-bCMsuC-byW92J-byW8yY-byW8ff-cFYz1q-byW7Wd-bRGad8-faDUga-faU5X3-faU5Uq-faDTD8-faDPse-faU5R5-faDUkz-faU9RE-faDU7B-faU5Qo-faU9YL-faDPUZ-faYMYJ-faDUpa-faDQ1B-faUagb-faU5cs-faU5Bs-faDPp4-faDTLx-faU9Gm-faU5tf-dh6vjw">"Yoenis Cespedes"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/jones_card.jpg" alt="Adam Jones, Baltimore Orioles. Last year, Jones brought a WWE belt to Media Day. This year, he hopes his hard swing can add more hardware to the collection.">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3637134503">"Adam Jones"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/dozier_card.jpg" alt="Brian Dozier, Minnesota Twins. Representing the host team, Dozier is on pace for a career-best season HR total and is in the midst of a convincing 30-30 campaign. ">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/8629971836/in/photolist-e9u2me-e9BAM5-e9C53J-e9ARXS-e9ugZr-e9zW71-e8WESX-e9u77M-atkGY2-atkGUp-atkGVn-atomD5-atomDY">"Brian Dozier"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/donaldson_card.jpg" alt="Josh Donaldson, Oakland Athletics. Joing A’s teammate Cespedes in the derby, Donaldson makes his first All-Star appearane. He also will start at 3B for the AL.">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/9584201356/in/photolist-fAVx9Y-fArVp6-cdMT1o-4HfnQG-4HCL6E-4Hfm5s-4HBg7W-4HyAm6-4HCJcy-4Hx16z-4HfmUN-4Hyy5P-4HBfws-4Hyt9M-4HfoEY-4HBf33-4Hyzqr-4Hfkfs-4GWwZ2-4H1GiY-4GWHmH-myxYtc-myxXTp-myzKDu-myxYkr-myywgP-myyujn-myzMff-myyvGn-myxZax-myxZNM-myywt2-myxXce-myxXFv">"Josh Donaldson"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+						<div class="player-container wow bounceInRight animated" data-wow-duration="2s">
+							<h3 class="title section-title nl">National League</h3>
+							<div class="player">
+								<img src="./images/tulowitzki_card.jpg" alt="Troy Tulowitzki, Colorado Rockies. Captain of the National League squad, Tulowitzki leads the league with a blistering .348 batting average.">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/dirkhansen/3738124462">"Troy Tulowitzki"</a> by SD Dirk is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/stanton_card.jpg" alt="Giancarlo Stanton, Miami Marlins. Leading the NL in home runs, Stanton hit a 484-foot grand slam on April 4. It’s estimated to be the farthest shot Marlins Park has ever seen.">
+								<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/misschatter/4986632298">"2ND"</a> by Cathy T is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/puig_card.jpg" alt="Yasiel Puig, Los Angeles Dodgers. Bat-flipping Puig had a breathtaking rookie campaign. Now, he looks to continue to make history in his sophomore season.">
+								<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/84263554@N00/13872864403">"Yasiel Puig..."</a> by Ron Reiring is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/frazier_card.jpg" alt="Todd Frazier, Cincinnati Reds. Ranking 5th in the NL in home runs, Frazier will likely take pitches from his brother, Charlie, during the competition.">
+								<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/bandwagon_photography/7835116392">"Todd Frazier..."</a> by Heather Jackson is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+							</div>
+							<div class="player">
+								<img src="./images/morneau_card.jpg" alt="Justin Morneau, Colorado Rockies. Returning to Target Field for the first time, the former Twin looks to put on a show for the fans who have supported him for 11 seasons.">
+								<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3511463149/in/photolist-6miaE6-6mic7v-6mnhAY-4FBac7-6mi8Gg-4FxGVh-4Ftung-4FsCTF-6mieu8-6mibZg-6miexc-4FAQQ5-4Ft6je-e9BTty-e9ve3K-e9ukVe-4FsjgH-6mniM5-e9dRCK-e9dN9M-e8Whmc-e9jAHj-e9u9TF-e93ea1-e9dR5R-e9dWzB-e9dgCZ-5ajGgW-e9jzuG-e9jt77-6xMRGR-e9d2Ba-e9cMRi-e9jMu5-5mx32s-6xMRB4-6xMRDP-5mhT6G-6micxc-5mdQNg-5msCu8-5msD6V-4Fwz8t-5mxkjb-4FwAKn-5mt4XV-5mdGn6-6mnmSU-5mdJwK-5msEP6">"Justin Morneau"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+							</div>
 						</div>
 					</div>
-					<div class="vs">
-						<img src="./images/vs.png">
-					</div>
-					<div class="player-container wow bounceInRight animated" data-wow-duration="2s">
-						<h3 class="title section-title nl">National League</h3>
-						<div class="player">
-							<img src="./images/tulowitzki_card.jpg" alt="Troy Tulowitzki, Colorado Rockies. Captain of the National League squad, Tulowitzki leads the league with a blistering .348 batting average.">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/dirkhansen/3738124462">"Troy Tulowitzki"</a> by SD Dirk is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/stanton_card.jpg" alt="Giancarlo Stanton, Miami Marlins. Leading the NL in home runs, Stanton hit a 484-foot grand slam on April 4. It’s estimated to be the farthest shot Marlins Park has ever seen.">
-							<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/misschatter/4986632298">"2ND"</a> by Cathy T is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/puig_card.jpg" alt="Yasiel Puig, Los Angeles Dodgers. Bat-flipping Puig had a breathtaking rookie campaign. Now, he looks to continue to make history in his sophomore season.">
-							<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/84263554@N00/13872864403">"Yasiel Puig..."</a> by Ron Reiring is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/frazier_card.jpg" alt="Todd Frazier, Cincinnati Reds. Ranking 5th in the NL in home runs, Frazier will likely take pitches from his brother, Charlie, during the competition.">
-							<p class="attribution">Derivative of<a target="_blank" href="https://www.flickr.com/photos/bandwagon_photography/7835116392">"Todd Frazier..."</a> by Heather Jackson is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
-						</div>
-						<div class="player">
-							<img src="./images/morneau_card.jpg" alt="Justin Morneau, Colorado Rockies. Returning to Target Field for the first time, the former Twin looks to put on a show for the fans who have supported him for 11 seasons.">
-							<p class="attribution"><a target="_blank" href="https://www.flickr.com/photos/keithallison/3511463149/in/photolist-6miaE6-6mic7v-6mnhAY-4FBac7-6mi8Gg-4FxGVh-4Ftung-4FsCTF-6mieu8-6mibZg-6miexc-4FAQQ5-4Ft6je-e9BTty-e9ve3K-e9ukVe-4FsjgH-6mniM5-e9dRCK-e9dN9M-e8Whmc-e9jAHj-e9u9TF-e93ea1-e9dR5R-e9dWzB-e9dgCZ-5ajGgW-e9jzuG-e9jt77-6xMRGR-e9d2Ba-e9cMRi-e9jMu5-5mx32s-6xMRB4-6xMRDP-5mhT6G-6micxc-5mdQNg-5msCu8-5msD6V-4Fwz8t-5mxkjb-4FwAKn-5mt4XV-5mdGn6-6mnmSU-5mdJwK-5msEP6">"Justin Morneau"</a> by Keith Allison is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
-						</div>
+					<div class="top">
+						<a href="#top">Back to top</a>
 					</div>
 				</div>
-				<div class="top">
-					<a href="#top">Back to top</a>
-				</div>
-			</div>
-			<hr class="featurette-divider" id="about">
-			<div class="sub-container">
-				<h3 class="title">About</h3>
-				<div class="methodology">
-					<p>At SeatGeek, we want you to get the most bang for your dollar. And so, we set out to answer "in which section would fans have <span class="emphasize">the most</span> opportunities to catch a home run while paying <span class="emphasize">the least</span> for their seats?"</p>
-					<p>Using ESPN's Home Run Tracker, we plotted all of the home runs the participants have hit in 2014. We then determined where the home runs would have landed if they were hit at Target Field. Finally, we calculated the average number of home runs hit at the Home Run Derby over the past few years and scaled the distribution to equal this total.</p>
-				</div>
-				<div class="top">
-					<a href="#top">Back to top</a>
+				<hr class="featurette-divider" id="about">
+				<div class="sub-container">
+					<h3 class="title">About</h3>
+					<div class="methodology">
+						<p>At SeatGeek, we want you to get the most bang for your dollar. And so, we set out to answer "in which section would fans have <span class="emphasize">the most</span> opportunities to catch a home run while paying <span class="emphasize">the least</span> for their seats?"</p>
+						<p>Using ESPN's Home Run Tracker, we plotted all of the home runs the participants have hit in 2014. We then determined where the home runs would have landed if they were hit at Target Field. Finally, we calculated the average number of home runs hit at the Home Run Derby over the past few years and scaled the distribution to equal this total.</p>
+					</div>
+					<div class="top">
+						<a href="#top">Back to top</a>
+					</div>
 				</div>
 			</div>
 		</div>

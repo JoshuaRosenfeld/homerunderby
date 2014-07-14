@@ -141,34 +141,33 @@ $(document).ready(function() {
 			}
 		});
 
-		function over(element) {
-			var name = $(element).data('name');
-			color = colors[name];
-			var light_color = color.slice(0);
-			light_color[3] = 0.05;
-			$(element).css('background-color', 'rgba('+light_color+')');
-		}
-
 		$('.circle').on({
-			// mouseover: function(){
-				
-			// },
-			// mouseleave: function() {
-			// 	$(this).css('background-color', 'rgb(255, 255, 255)');	
-			// },
+			mouseover: function(){
+				var name = $(this).data('name');
+				if (!visible[name]) {
+					color = colors[name];
+					var light_color = color.slice(0);
+					light_color[3] = 0.05;
+					$(this).css('background-color', 'rgba('+light_color+')');
+				}
+			},
+			mouseleave: function() {
+				var name = $(this).data('name');
+				if (!visible[name]) {
+					$(this).css('background-color', 'rgb(255, 255, 255)');
+				}	
+			},
 			click: function() {
 				var name = $(this).data('name');
 				if (visible[name]) {
 					map.removeLayer(overlay[name]);
 					$(this).css('background-color', 'rgb(255, 255, 255)');
-					// $(this).on('mouseleave');
-					// $(this).on('mouseover');
+					$(this).on('mouseleave');
+					$(this).on('mouseover');
 				} else {
 					map.addLayer(overlay[name]);
 					color = colors[name];
 					$(this).css('background-color', 'rgba('+color+')');
-					// $(this).off('mouseleave');
-					// $(this).off('mouseover');
 				}
 				visible[name] = !visible[name];
 			}
