@@ -330,8 +330,10 @@ li.nav-list-last {
 }
 
 .tweet-button {
-	float: right;
+	display: inline-block;
 	margin-top: 18px;
+	margin-left: 25px;
+	position: absolute;
 }
 
 .vs {
