@@ -56,6 +56,14 @@ body {
 	vertical-align: top;
 }
 
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 .credit {
 	height: 20px;
 	position: relative;
@@ -82,10 +90,11 @@ body {
 	padding-top: 20px;
 }
 
-.container {
-	width: auto;
+.container-content {
 	min-width: 1080px;
+	width: auto;
 	margin: 20px 25px;
+	padding: 15px;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 3px rgba(0,0,0,.2);
@@ -120,7 +129,6 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 auto;
-	position: relative;
 	width: 100%;
 	margin-top: 15px;
 }
@@ -319,6 +327,11 @@ li.nav-list-last {
 .top {
 	text-align: right;
 	margin-bottom: 20px;
+}
+
+.tweet-button {
+	float: right;
+	margin-top: 18px;
 }
 
 .vs {
