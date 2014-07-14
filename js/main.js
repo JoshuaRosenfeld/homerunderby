@@ -233,7 +233,7 @@ $(document).ready(function() {
 			}
 
 			var avg = element['avg_price'];
-			var hr = element['homeruns'];
+			var hr = element['homeruns'].toFixed(2);
 			var cost;
 
 			cost = '$' + (avg / element['homeruns']).toFixed(2);
@@ -243,7 +243,7 @@ $(document).ready(function() {
 				cost = "n/a"
 			}
 
-			$( "<tr><td>" + name + "</td><td>" + avg + "</td><td>" + element['homeruns'] +
+			$( "<tr><td>" + name + "</td><td>" + avg + "</td><td>" + hr +
 				"</td><td>" + cost + "</td></tr>" ).appendTo( '.table > tbody' );
 		});
 	}
