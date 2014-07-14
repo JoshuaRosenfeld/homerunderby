@@ -157,19 +157,15 @@ body {
 	background-repeat: no-repeat;
 }
 
-.last {
-	margin-right: 0;
-}
-
 .legend {
-	width: 152px;
+	width: 155px;
 	height: 75px;
 	background-color: white;
 	display: inline-block;
 	padding: 5px;
 	position: relative;
 	top: -665px;
-	left: 360px;
+	left: 330px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 4px;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
@@ -227,6 +223,12 @@ body {
 .nav-list-item {
 	display: inline-block;
 	margin-right: 30px;
+	width: 129px;
+}
+
+li.nav-list-last {
+	width: auto;
+	margin-right: 0;
 }
 
 .num {
@@ -245,7 +247,7 @@ body {
 }
 
 .primary-nav {
-	width: 415px;
+	width: 380px;
 	margin: 20px auto;
 }
 
