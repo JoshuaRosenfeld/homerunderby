@@ -1,37 +1,37 @@
 var sections = [
 	{
 		"name": 128,
-		"homeruns": 8.34,
+		"homeruns": 8.83,
 		"avg_price": 834.87,
-		"rank": 7
+		"rank": 5
 	},
 	{
 		"name": 129,
-		"homeruns": 4.17,
+		"homeruns": 4.08,
 		"avg_price": 727.63,
 		"rank": 12
 	},
 	{
 		"name": 130,
-		"homeruns": 3.48,
+		"homeruns": 3.4,
 		"avg_price": 752.36,
 		"rank": 15
 	},
 	{
 		"name": 131,
-		"homeruns": 3.48,
+		"homeruns": 3.4,
 		"avg_price": 701.67,
 		"rank": 14
 	},
 	{
 		"name": 132,
-		"homeruns": 0.7,
+		"homeruns": 0.68,
 		"avg_price": 732.06,
 		"rank": 25
 	},
 	{
 		"name": 133,
-		"homeruns": 1.39,
+		"homeruns": 1.36,
 		"avg_price": 522.83,
 		"rank": 21
 	},
@@ -49,67 +49,67 @@ var sections = [
 	},
 	{
 		"name": 136,
-		"homeruns": 4.87,
+		"homeruns": 4.76,
 		"avg_price": 483.20,
-		"rank": 6
+		"rank": 7
 	},
 	{
 		"name": 137,
-		"homeruns": 0.7,
+		"homeruns": 0.68,
 		"avg_price": 493.00,
 		"rank": 23
 	},
 	{
 		"name": 138,
-		"homeruns": 2.78,
+		"homeruns": 2.72,
 		"avg_price": 706,
 		"rank": 18
 	},
 	{
 		"name": "great-clips-great-seats",
-		"homeruns": 4.17,
+		"homeruns": 4.76,
 		"avg_price": 618.75,
-		"rank": 10
+		"rank": 9
 	},
 	{
 		"name": 229,
-		"homeruns": 8.34,
+		"homeruns": 8.15,
 		"avg_price": 772,
-		"rank": 5
+		"rank": 6
 	},
 	{
 		"name": 230,
-		"homeruns": 6.95,
+		"homeruns": 7.47,
 		"avg_price": 532.00,
 		"rank": 4
 	},
 	{
 		"name": 231,
-		"homeruns": 4.17,
+		"homeruns": 4.08,
 		"avg_price": 542.34,
-		"rank": 9
+		"rank": 10
 	},
 	{
 		"name": 232,
-		"homeruns": 3.48,
+		"homeruns": 3.4,
 		"avg_price": 525,
 		"rank": 11
 	},
 	{
 		"name": 233,
-		"homeruns": 0.7,
+		"homeruns": 0.68,
 		"avg_price": 550,
 		"rank": 24
 	},
 	{
 		"name": 234,
-		"homeruns": 1.39,
+		"homeruns": 1.36,
 		"avg_price": 319.6,
 		"rank": 16
 	},
 	{
 		"name": 235,
-		"homeruns": 0.7,
+		"homeruns": 0.68,
 		"avg_price": 470.83,
 		"rank": 22
 	},
@@ -121,50 +121,50 @@ var sections = [
 	},
 	{
 		"name": 237,
-		"homeruns": 3.48,
+		"homeruns": 3.4,
 		"avg_price": 830.67,
 		"rank": 17
 	},
 	{
 		"name": 238,
-		"homeruns": 6.95,
+		"homeruns": 6.8,
 		"avg_price": 407.84,
 		"rank": 1
 	},
 	{
 		"name": 239,
-		"homeruns": 6.26,
+		"homeruns": 6.12,
 		"avg_price": 383.59,
 		"rank": 2
 	},
 	{
 		"name": 240,
-		"homeruns": 4.87,
+		"homeruns": 4.76,
 		"avg_price": 1253.25,
 		"rank": 19
 	},
 	{
 		"name": 329,
-		"homeruns": 2.78,
+		"homeruns": 2.72,
 		"avg_price": 305.78,
 		"rank": 8
 	},
 	{
 		"name": 330,
-		"homeruns": 1.39,
+		"homeruns": 1.36,
 		"avg_price": 269,
 		"rank": 13
 	},
 
 	{
 		"name": 331,
-		"homeruns": 3.48,
+		"homeruns": 3.4,
 		"avg_price": 230.75,
 		"rank": 3
 	},
 	{
 		"name": 332,
-		"homeruns": 1.39,
+		"homeruns": 1.36,
 		"avg_price": 424.63,
 		"rank": 20
 	},
