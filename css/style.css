@@ -81,7 +81,6 @@ body {
 
 .circle:hover {
 	cursor: pointer;
-	box-shadow: 0 0 30px #cccccc;
 }
 
 .circle-text {
@@ -172,17 +171,17 @@ body {
 }
 
 .legend {
-	width: 155px;
+	width: 160px;
 	height: 75px;
 	background-color: white;
 	display: inline-block;
 	padding: 5px;
 	position: relative;
 	top: -665px;
-	left: 330px;
+	left: 325px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
-	border-radius: 4px;
-	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.65);
 	margin-bottom: -75px;
 }
 
@@ -359,10 +358,14 @@ li.nav-list-last {
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 4px;
-	box-shadow: 0 1px 7px rgba(0,0,0,0.65);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.65);
 	height: 25px;
 	line-height: 11px;
 	margin-bottom: -25px;
+}
+
+.leaflet-bar {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.65);
 }
 
 .all {
